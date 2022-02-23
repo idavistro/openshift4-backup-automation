@@ -1,3 +1,6 @@
+-- Feb 2022
+  - Adding changes from the original in the yaml file.
+
 # Openshift 4 Backup Automation
 
 This tool was built to automate the steps to create an Openshift 4 backup described on https://docs.openshift.com/container-platform/4.7/backup_and_restore/control_plane_backup_and_restore/backing-up-etcd.html
@@ -13,4 +16,3 @@ Cronjob **openshift-backup** resource  will be created and scheduled to run at 1
 Grant access to the **privileged** scc to the service account **openshift-backup** running the Cronjob.
 
 `oc adm policy add-scc-to-user privileged -z openshift-backup -n ocp-backup-etcd`
-
